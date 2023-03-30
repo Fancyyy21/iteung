@@ -17,4 +17,5 @@ func Web(page *fiber.App) {
 	page.Delete("/", controller.Sink)
 	page.Options("/", controller.Sink)
 	page.Get("/", controller.Homepage) //ujicoba panggil package musik
+	page.Get("/presensi", controller.GetPresensiBulanIni)
 }
